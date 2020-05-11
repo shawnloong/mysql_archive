@@ -1,0 +1,20 @@
+TIME                ELAPSED   COUNT
+2020-05-11T21:58:12       0       0
+2020-05-11T21:58:23      10    5000
+2020-05-11T21:58:34      21   10000
+2020-05-11T21:58:45      32   15000
+2020-05-11T21:58:56      43   20000
+2020-05-11T21:59:07      54   25000
+2020-05-11T21:59:15      62   28628
+Started at 2020-05-11T21:58:12, ended at 2020-05-11T21:59:15
+Source: A=utf8mb4,D=netdata,P=3306,h=192.168.137.3,p=...,t=user_info,u=netdata
+Dest:   A=utf8mb4,D=netdata,P=3306,h=192.168.137.3,p=...,t=his_user_info,u=netdata
+SELECT 28628
+INSERT 28628
+DELETE 28628
+Action         Count       Time        Pct
+deleting       28628    25.9422      41.39
+inserting      28628    21.9006      34.94
+select            30     9.7683      15.59
+commit            58     0.3684       0.59
+other              0     4.6929       7.49
