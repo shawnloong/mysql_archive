@@ -129,7 +129,7 @@ archive_condition,is_archive FROM ops.archive_tab_info  where is_archive=1"
                     archive_status = 1
                 else:
                     archive_status = 0
-
+            db.ping(reconnect=True)
               #记录log
             sql_insert = "insert into archive_tab_log(dbid, db_nick_name, archive_starttime, archive_endtime, " \
                      "archive_cmd, archive_status, archive_qty, cost_time ) " \
